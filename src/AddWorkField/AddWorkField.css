@@ -1,0 +1,90 @@
+.todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+.add-work-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 50px;
+    padding: 0 20px;
+
+    height: 15%;
+    width: 80%;
+
+    border-radius: 10px;
+
+    backdrop-filter: blur(3px);
+
+    box-shadow: inset 0 0 100px 0;
+}
+
+.text-field {
+    color: white;
+
+    background: none;
+
+    border: none;
+    outline: none;
+
+    width: 80%;
+}
+
+.btn-div {
+    width: 20%;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn {
+
+    position: relative;
+    padding: 10px 20px;
+    background: rgb(62, 62, 62);
+    color: #fff;
+    letter-spacing: 1px;
+
+    box-shadow: 0 0 5px 0 #fff;
+    border-radius: 7px;
+
+    transition: 0.5s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(90deg, transparent, #fff, transparent);
+    transition: 0.5s;
+}
+
+.btn:hover::before {
+    left: 100%;
+}
+
+.added-todo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 50px;
+
+    width: 100%;
+    height: 80%;
+
+    overflow-y: auto;
+}
